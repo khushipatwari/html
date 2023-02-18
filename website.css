@@ -1,0 +1,428 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin sans', sans-serif;
+    box-sizing: border-box;
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(hd-wallpaper-g51be63857_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+/* .logo:before
+{
+    content: '';
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.453),rgba(75, 153, 175, 0.568), rgba(75, 153, 175, 0.563) );
+    background-size: 400%;
+    position: absolute;
+    z-index: -1;
+    animation:  animate 20s linear infinite ;
+}     */
+
+/* .logo:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px rgba(7, 139, 240, 0.274), 0 0 40px rgba(7, 139, 240, 0.241), 0 0 80px rgba(7, 139, 240, 0.245);
+    transition-delay: 1s;
+} */
+.logo span
+{
+    position: absolute;
+    display: block;
+}
+.logo span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,transparent,rgba(7, 139, 240, 0.971));
+}
+.logo:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+.logo span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg,transparent,rgba(7, 139, 240, 0.971));
+}
+.logo:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.logo span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgba(7, 139, 240, 0.971));
+}
+.logo:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.logo span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, rgba(7, 139, 240, 0.971));
+}
+.logo:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.75s;
+}
+
+.logo c 
+{
+    color:  rgba(7, 139, 240, 0.971);
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a
+{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover
+{
+    color:  rgba(7, 139, 240, 0.971);
+    transition: 0.5s;
+}
+.btn
+{
+    background-color: rgba(7, 139, 240, 0.971);
+    color:antiquewhite;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1
+{
+    color: antiquewhite;
+    margin: 20px 0 20px;
+    font-size: 75px;
+}
+h3
+{
+    color: antiquewhite;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+h4
+{
+    color:rgba(137, 192, 235, 0.971) ;
+}
+.newsletter form
+{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child
+{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid rgba(7, 139, 240, 0.971) ;
+    outline: none;
+    border-radius: 30px;
+}
+.newsletter form input:last-child
+{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:rgba(7, 139, 240, 0.971) ;
+    top: 6px;
+    right: 6px;
+}
+.about
+{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img
+{
+    height: auto;
+    width: 430px;
+}
+.about-text
+{
+    width: 550px;
+}
+.main
+{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2
+{
+    color:antiquewhite;
+    font-size: 75px;
+    text-transform: capitalize ;
+    margin-bottom: 20px;
+}
+.about-text h5
+{
+    color:antiquewhite;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize ;
+    margin-bottom: 25px;
+}
+.about-text p
+{
+    color:rgba(138, 195, 238, 0.971);
+    letter-spacing:1px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+button
+{
+    background-color: rgba(7, 139, 240, 0.971);
+    color: antiquewhite;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.5s ;
+   
+}
+button:hover
+{
+    background-color: transparent;
+    border: 2px solid  rgba(7, 139, 240, 0.971);
+    cursor: pointer;
+}
+.service
+{
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: #101010;
+    padding: 100px 0px;
+    width: 100%;
+}
+.title h2
+{
+    color: antiquewhite;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.container
+{
+    margin-left: 200px;
+    width:  75%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container .card
+{
+    position: relative;
+    cursor: pointer;
+}
+.container .card .face
+{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1
+{
+    position: relative;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card:hover .face.face1
+{
+    transform: translateY(0);
+}
+.container .card:hover  #first
+{
+    background: rgba(7, 139, 240, 0.733);
+}
+.container .card:hover #second
+{
+    background: rgba(7, 139, 240, 0.743);
+}
+.container .card:hover #third
+{
+    background:  rgba(7, 139, 240, 0.777);
+}
+.container .card .face.face1 .inside
+{
+    opacity: 0.2;
+    transition: 0.5s;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card:hover .face.face1 .inside 
+{
+    opacity: 1;
+    display: flex;
+}    
+.container .card .face.face1 .inside i
+{
+   font-size: 50px;
+}     
+.container .card .face.face1 .inside h3
+{
+    margin: 20px 0 0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}    
+.container .card .face.face2
+{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.488);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+}
+.container .card .face.face2 .inside p
+{
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .inside a
+{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover
+{
+    background: #333;
+    color: #fff;
+}
+.contact
+{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact p
+{
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact .button-two
+{
+    background-color: rgba(7, 139, 240, 0.971);
+    color: antiquewhite;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.5s ;
+}
+.contact .button-two:hover
+{
+    background-color: transparent;
+    border: 2px solid  rgba(7, 139, 240, 0.971);
+    cursor: pointer;
+}
