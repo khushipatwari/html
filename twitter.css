@@ -1,0 +1,75 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+}
+.card
+{
+    align-items: center;
+    background: black;
+    margin-top: 120px;
+    width: 500px;
+    height: 700px;
+}
+.card div
+{
+    margin-left: 160px;
+    margin-right: auto;
+    position: relative;
+    margin-top: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: fit-content;
+    padding:  2px 8px;
+}
+.card .logo
+{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.card .home
+{
+    margin-top:50px;
+}
+.card .explore
+{
+    font-size: 18px;
+}
+.card .tweet
+{
+    margin-left: 135px;
+    width: 200px;
+    height: 50px;
+    background: rgb(141, 57, 230);
+    border-radius: 30px;
+}
+.card .tweet text
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+}
+.card  .tweet:hover
+{
+    border-radius: 15px;
+    background:  rgba(135, 79, 195, 0.888);
+    transform: scale(1.1);
+    translate: 5px;
+    z-index: 1;
+}
+.card #hover1:hover
+{
+    border-radius: 15px;
+    background:  rgba(255, 255, 255, 0.257);
+    transform: scale(1.1);
+    translate: 5px;
+    z-index: 1;
+}
+
